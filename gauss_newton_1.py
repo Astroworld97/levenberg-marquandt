@@ -11,7 +11,8 @@ f1 = function1
 #generate data from real model y = 2x/(3+x)
 
 x = np.linspace(0, 5, 50)
-y = f1(2,3,x) + np.random.normal(0,0.1,size=50)
+y = f1(2,3,x)
+# y = f1(2,3,x) + np.random.normal(0,0.1,size=50)
 
 plt.scatter(x,y)
 

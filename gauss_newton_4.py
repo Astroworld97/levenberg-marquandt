@@ -26,7 +26,7 @@ def Jacobian(f, b, x): #In the provided code, b represents a vector of parameter
         grads.append(grad)
     return np.column_stack(grads)
 
-def Gauss_Newton(f, x, y, b0, tol, max_iter): #note that b0 is the initial guess
+def Gauss_Newton(f, x, y, b0, tol, max_iter): #note that b0 is the initial guess for b; aka, the vector of coefficients, called c in Yan-Bin's notes
     old = new = b0
     for itr in range(max_iter):
         old = new
